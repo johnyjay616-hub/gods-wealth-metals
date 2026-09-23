@@ -53,7 +53,7 @@ function checkout(){
  const lines=cart.map(p=>'• '+p.name+' — ₦'+money(p.price)).join('%0A');
  const total=money(cart.reduce((s,p)=>s+p.price,0));
  const message='Hello Gods Wealth Metals, I would like to place an order:%0A%0A'+lines+'%0A%0ATotal: ₦'+total;
- window.open('https://wa.me/234801396889?text='+message,'_blank');
+ window.open('https://wa.me/2348101396889?text='+message,'_blank');
 }
 render();
 </script>
