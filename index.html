@@ -34,7 +34,7 @@ footer{background:#080909;color:#bbb;text-align:center;padding:35px 22px}footer 
 <section class="section contact" id="contact"><div class="section-head"><div><div class="eyebrow">Get in touch</div><h2>Contact Gods Wealth Metals</h2></div></div><div class="contact-box"><div class="contact-card"><h3>Product enquiries</h3><p>Contact us for current prices, availability and product specifications.</p></div><div class="contact-card"><h3>Orders</h3><p>Use the shopping cart to prepare your order. Payment and delivery integration can be connected next.</p></div></div></section>
 </main>
 <footer><strong>GODS WEALTH METALS</strong><br>Quality • Strength • Reliability<br><small>© 2026 Gods Wealth Metals. All Rights Reserved.</small></footer>
-<aside class="cart" id="cart"><div class="cart-top"><h2>Your Cart</h2><button class="close" onclick="toggleCart()">×</button></div><div id="items"></div><div class="total">Total: ₦<span id="total">0</span></div><button class="checkout" onclick="checkout()">Proceed to Checkout</button></aside>
+<aside class="cart" id="cart"><div class="cart-top"><h2>Your Cart</h2><button class="close" onclick="toggleCart()">×</button></div><div id="items"></div><div class="total">Total: ₦<span id="total">0</span></div><button class="checkout" onclick="checkout()">Order via WhatsApp</button></aside>
 <script>
 const products=[
 {name:'Premium Steel Sheet',cat:'Steel',price:85000,img:'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80'},
@@ -48,7 +48,13 @@ function add(i){cart.push(products[i]);update();toggleCart(true)}
 function remove(i){cart.splice(i,1);update()}
 function update(){document.getElementById('count').textContent=cart.length;document.getElementById('items').innerHTML=cart.length?cart.map((p,i)=>`<div class="cart-item"><b>${p.name}</b><br>₦${money(p.price)}<br><button class="remove" onclick="remove(${i})">Remove</button></div>`).join(''):'<p style="margin-top:25px;color:#666">Your cart is empty.</p>';document.getElementById('total').textContent=money(cart.reduce((s,p)=>s+p.price,0))}
 function toggleCart(force){document.getElementById('cart').classList.toggle('open',force===true?!0:force===false?!1:!document.getElementById('cart').classList.contains('open'))}
-function checkout(){if(!cart.length)return alert('Your cart is empty.');alert('Checkout is ready for payment and delivery integration.')}
+function checkout(){
+ if(!cart.length)return alert('Your cart is empty.');
+ const lines=cart.map(p=>'• '+p.name+' — ₦'+money(p.price)).join('%0A');
+ const total=money(cart.reduce((s,p)=>s+p.price,0));
+ const message='Hello Gods Wealth Metals, I would like to place an order:%0A%0A'+lines+'%0A%0ATotal: ₦'+total;
+ window.open('https://wa.me/234801396889?text='+message,'_blank');
+}
 render();
 </script>
 </body>
