@@ -36,12 +36,12 @@ footer{background:#080909;color:#bbb;text-align:center;padding:35px 22px}footer 
 <aside class="cart" id="cart"><div class="cart-top"><h2>Your Cart</h2><button class="close" onclick="toggleCart()">×</button></div><div id="items"></div><div class="total">Total: <span id="total">Contact for price</span></div><button class="checkout" onclick="checkout()">Order via WhatsApp</button></aside>
 <script>
 const products=[
-{name:'ROLLER SHUTTER DOOR',cat:'Roller Shutter Doors',price:null,img:'assets/roller-shutter-door.jpg'}
+{name:'ROLLER SHUTTER DOOR',cat:'Roller Shutter Doors',price:null,img:'assets/roller-shutter-door.jpg',img2:'assets/roller-shutter-door-2.jpg'}
 ];
 let cart=[];
 const money=n=>n.toLocaleString('en-NG');
 function priceText(p){return p.price===null?'Contact for price':'₦'+money(p.price)}
-function render(){document.getElementById('products').innerHTML=products.map((p,i)=>`<article class="card"><img src="${p.img}" alt="${p.name}"><div class="card-body"><small>${p.cat}</small><h3>${p.name}</h3><div class="price">${priceText(p)}</div><button class="add" onclick="add(${i})">Add to Cart</button></div></article>`).join('');update()}
+function render(){document.getElementById('products').innerHTML=products.map((p,i)=>`<article class="card"><img src="${p.img}" alt="${p.name}"><img src="${p.img2}" alt="${p.name} - second view"><div class="card-body"><small>${p.cat}</small><h3>${p.name}</h3><div class="price">${priceText(p)}</div><button class="add" onclick="add(${i})">Add to Cart</button></div></article>`).join('');update()}
 function add(i){cart.push(products[i]);update();toggleCart(true)}
 function remove(i){cart.splice(i,1);update()}
 function update(){document.getElementById('count').textContent=cart.length;document.getElementById('items').innerHTML=cart.length?cart.map((p,i)=>`<div class="cart-item"><b>${p.name}</b><br>${priceText(p)}<br><button class="remove" onclick="remove(${i})">Remove</button></div>`).join(''):'<p style="margin-top:25px;color:#666">Your cart is empty.</p>';document.getElementById('total').textContent=cart.some(p=>p.price===null)?'Contact for price':'₦'+money(cart.reduce((s,p)=>s+p.price,0))}
