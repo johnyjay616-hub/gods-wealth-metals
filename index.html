@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Gods Wealth Metals — quality metals and building materials.">
+<meta name="description" content="Gods Wealth Metals — quality metals, building materials and roller shutter doors.">
 <title>Gods Wealth Metals | Quality Metals</title>
 <style>
 :root{--gold:#c9a227;--gold2:#f0d36a;--dark:#0b0d0f;--dark2:#15191d;--light:#f7f7f5;--muted:#6b7075}
@@ -15,7 +15,7 @@ nav{display:flex;gap:24px}nav a{font-size:14px;color:#ddd}nav a:hover{color:var(
 .hero-inner{max-width:1200px;width:100%;margin:auto;padding:80px 22px}.eyebrow{color:var(--gold2);font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:13px}.hero h1{font-size:clamp(42px,7vw,78px);line-height:1.02;max-width:760px;margin:15px 0}.hero p{max-width:650px;color:#ddd;font-size:18px}.btn{display:inline-block;margin-top:28px;background:var(--gold);color:#111;padding:14px 24px;border-radius:5px;font-weight:900}
 .section{max-width:1200px;margin:auto;padding:75px 22px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}.section h2{font-size:36px}.section-head p{color:var(--muted)}
 .categories,.products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.cat{background:var(--dark2);color:#fff;padding:30px;border-radius:8px;min-height:145px;display:flex;flex-direction:column;justify-content:end}.cat b{font-size:20px;color:var(--gold2)}
-.products{grid-template-columns:repeat(4,1fr)}.card{background:#fff;border:1px solid #e3e4e5;border-radius:8px;overflow:hidden}.card img{width:100%;height:210px;object-fit:cover}.card-body{padding:18px}.card small{color:var(--muted)}.card h3{margin:5px 0 8px}.price{font-weight:900;font-size:19px;color:#9b7710}.add{width:100%;border:0;background:var(--dark);color:#fff;padding:11px;margin-top:14px;border-radius:4px;cursor:pointer}.add:hover{background:var(--gold);color:#111}
+.card{background:#fff;border:1px solid #e3e4e5;border-radius:8px;overflow:hidden}.card img{width:100%;height:330px;object-fit:cover}.card-body{padding:18px}.card small{color:var(--muted)}.card h3{margin:5px 0 8px}.price{font-weight:900;font-size:19px;color:#9b7710}.add{width:100%;border:0;background:var(--dark);color:#fff;padding:11px;margin-top:14px;border-radius:4px;cursor:pointer}.add:hover{background:var(--gold);color:#111}
 .about{background:#111;color:#fff}.about-grid{max-width:1200px;margin:auto;padding:75px 22px;display:grid;grid-template-columns:1fr 1fr;gap:60px}.about p{color:#c9c9c9}.checks{display:grid;gap:15px;margin-top:25px}.checks div{border-left:3px solid var(--gold);padding-left:15px}
 .contact{background:#fff}.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-card{padding:28px;border:1px solid #ddd;border-radius:8px}.contact-card h3{margin-bottom:8px}
 footer{background:#080909;color:#bbb;text-align:center;padding:35px 22px}footer strong{color:var(--gold2)}
@@ -28,31 +28,30 @@ footer{background:#080909;color:#bbb;text-align:center;padding:35px 22px}footer 
 <header><div class="nav"><a class="brand" href="#"><span>GODS</span> WEALTH METALS</a><nav><a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></nav><button class="cart-btn" onclick="toggleCart()">Cart (<span id="count">0</span>)</button></div></header>
 <main>
 <section class="hero" id="home"><div class="hero-inner"><div class="eyebrow">Strength • Quality • Value</div><h1>Built on quality. Made for lasting value.</h1><p>Shop dependable metal products and building materials from Gods Wealth Metals, with a straightforward experience from product selection to order.</p><a class="btn" href="#shop">Explore Products</a></div></section>
-<section class="section"><div class="section-head"><div><div class="eyebrow">Shop by category</div><h2>Our Categories</h2></div></div><div class="categories"><a class="cat" href="#shop"><b>Steel</b><span>Strong, reliable steel products</span></a><a class="cat" href="#shop"><b>Aluminium</b><span>Practical aluminium materials</span></a><a class="cat" href="#shop"><b>Roofing</b><span>Materials for durable projects</span></a><a class="cat" href="#shop"><b>Metal Pipes</b><span>Industrial and construction needs</span></a></div></section>
-<section class="section" id="shop"><div class="section-head"><div><div class="eyebrow">Featured collection</div><h2>Popular Products</h2></div><p>Prices shown are sample prices and can be updated.</p></div><div class="products" id="products"></div></section>
+<section class="section"><div class="section-head"><div><div class="eyebrow">Shop by category</div><h2>Our Categories</h2></div></div><div class="categories"><a class="cat" href="#shop"><b>Roller Shutter Doors</b><span>Strong and secure door solutions</span></a><a class="cat" href="#shop"><b>Steel</b><span>Strong, reliable steel products</span></a><a class="cat" href="#shop"><b>Aluminium</b><span>Practical aluminium materials</span></a><a class="cat" href="#shop"><b>Roofing</b><span>Materials for durable projects</span></a></div></section>
+<section class="section" id="shop"><div class="section-head"><div><div class="eyebrow">Featured collection</div><h2>Products</h2></div><p>Contact us for current pricing and availability.</p></div><div class="products" id="products"></div></section>
 <section class="about" id="about"><div class="about-grid"><div><div class="eyebrow">About us</div><h2>Reliable metals. Professional service.</h2><p style="margin-top:18px">Gods Wealth Metals is designed as a dependable destination for customers looking for quality metal and building materials.</p></div><div class="checks"><div><b>Quality-focused</b><br>Products presented with clear information.</div><div><b>Customer-first</b><br>A simple way to browse, select and order.</div><div><b>Built to grow</b><br>Ready for payment, delivery and inventory integrations.</div></div></div></section>
 <section class="section contact" id="contact"><div class="section-head"><div><div class="eyebrow">Get in touch</div><h2>Contact Gods Wealth Metals</h2></div></div><div class="contact-box"><div class="contact-card"><h3>Product enquiries</h3><p>Contact us for current prices, availability and product specifications.</p></div><div class="contact-card"><h3>Orders</h3><p>Use the shopping cart to prepare your order. Payment and delivery integration can be connected next.</p></div></div></section>
 </main>
 <footer><strong>GODS WEALTH METALS</strong><br>Quality • Strength • Reliability<br><small>© 2026 Gods Wealth Metals. All Rights Reserved.</small></footer>
-<aside class="cart" id="cart"><div class="cart-top"><h2>Your Cart</h2><button class="close" onclick="toggleCart()">×</button></div><div id="items"></div><div class="total">Total: ₦<span id="total">0</span></div><button class="checkout" onclick="checkout()">Order via WhatsApp</button></aside>
+<aside class="cart" id="cart"><div class="cart-top"><h2>Your Cart</h2><button class="close" onclick="toggleCart()">×</button></div><div id="items"></div><div class="total">Total: <span id="total">Contact for price</span></div><button class="checkout" onclick="checkout()">Order via WhatsApp</button></aside>
 <script>
 const products=[
-{name:'Premium Steel Sheet',cat:'Steel',price:85000,img:'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80'},
-{name:'Industrial Metal Pipe',cat:'Metal Pipes',price:45000,img:'https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=80'},
-{name:'Aluminium Sheet',cat:'Aluminium',price:65000,img:'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80'},
-{name:'Metal Roofing Sheet',cat:'Roofing',price:35000,img:'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80'}];
+{name:'ROLLER SHUTTER DOOR',cat:'Roller Shutter Doors',price:null,img:'assets/roller-shutter-door.jpg'}
+];
 let cart=[];
 const money=n=>n.toLocaleString('en-NG');
-function render(){document.getElementById('products').innerHTML=products.map((p,i)=>`<article class="card"><img src="${p.img}" alt="${p.name}"><div class="card-body"><small>${p.cat}</small><h3>${p.name}</h3><div class="price">₦${money(p.price)}</div><button class="add" onclick="add(${i})">Add to Cart</button></div></article>`).join('');update()}
+function priceText(p){return p.price===null?'Contact for price':'₦'+money(p.price)}
+function render(){document.getElementById('products').innerHTML=products.map((p,i)=>`<article class="card"><img src="${p.img}" alt="${p.name}"><div class="card-body"><small>${p.cat}</small><h3>${p.name}</h3><div class="price">${priceText(p)}</div><button class="add" onclick="add(${i})">Add to Cart</button></div></article>`).join('');update()}
 function add(i){cart.push(products[i]);update();toggleCart(true)}
 function remove(i){cart.splice(i,1);update()}
-function update(){document.getElementById('count').textContent=cart.length;document.getElementById('items').innerHTML=cart.length?cart.map((p,i)=>`<div class="cart-item"><b>${p.name}</b><br>₦${money(p.price)}<br><button class="remove" onclick="remove(${i})">Remove</button></div>`).join(''):'<p style="margin-top:25px;color:#666">Your cart is empty.</p>';document.getElementById('total').textContent=money(cart.reduce((s,p)=>s+p.price,0))}
+function update(){document.getElementById('count').textContent=cart.length;document.getElementById('items').innerHTML=cart.length?cart.map((p,i)=>`<div class="cart-item"><b>${p.name}</b><br>${priceText(p)}<br><button class="remove" onclick="remove(${i})">Remove</button></div>`).join(''):'<p style="margin-top:25px;color:#666">Your cart is empty.</p>';document.getElementById('total').textContent=cart.some(p=>p.price===null)?'Contact for price':'₦'+money(cart.reduce((s,p)=>s+p.price,0))}
 function toggleCart(force){document.getElementById('cart').classList.toggle('open',force===true?!0:force===false?!1:!document.getElementById('cart').classList.contains('open'))}
 function checkout(){
  if(!cart.length)return alert('Your cart is empty.');
- const lines=cart.map(p=>'• '+p.name+' — ₦'+money(p.price)).join('%0A');
- const total=money(cart.reduce((s,p)=>s+p.price,0));
- const message='Hello Gods Wealth Metals, I would like to place an order:%0A%0A'+lines+'%0A%0ATotal: ₦'+total;
+ const lines=cart.map(p=>'• '+p.name+(p.price===null?' — Price on request':' — ₦'+money(p.price))).join('%0A');
+ const total=cart.some(p=>p.price===null)?'Price on request':'₦'+money(cart.reduce((s,p)=>s+p.price,0));
+ const message='Hello Gods Wealth Metals, I would like to place an order:%0A%0A'+lines+'%0A%0ATotal: '+total;
  window.open('https://wa.me/2348101396889?text='+message,'_blank');
 }
 render();
