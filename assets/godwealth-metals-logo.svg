@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" role="img" aria-labelledby="title desc">
+<title>GODWEALTH METALS logo</title>
+<desc>Professional industrial logo featuring a stylized roller shutter door and the GODWEALTH METALS wordmark.</desc>
+<defs>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4d477"/><stop offset="1" stop-color="#c99528"/></linearGradient>
+</defs>
+<rect x="10" y="10" width="200" height="200" rx="38" fill="#0b1017" stroke="url(#gold)" stroke-width="8"/>
+<path d="M52 91h116M52 112h116M52 133h116M52 154h116" stroke="#c9d0d7" stroke-width="9" stroke-linecap="round"/>
+<path d="M45 83h130v86H45z" fill="none" stroke="#f0f2f4" stroke-width="7"/>
+<path d="M45 83c0-28 22-48 50-48h30c28 0 50 20 50 48" fill="none" stroke="url(#gold)" stroke-width="9"/>
+<path d="M45 169h130" stroke="#c62828" stroke-width="8" stroke-linecap="round"/>
+<path d="M70 184h80" stroke="#174a8b" stroke-width="7" stroke-linecap="round"/>
+<text x="250" y="105" fill="#f7f8fa" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="900" letter-spacing="4">GODWEALTH</text>
+<text x="253" y="160" fill="#d8a83e" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="11">METALS</text>
+</svg>
