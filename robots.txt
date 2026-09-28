@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://johnyjay616-hub.github.io/gods-wealth-metals/sitemap.xml
